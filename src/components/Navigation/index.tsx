@@ -1,14 +1,11 @@
 import Link from "next/link";
+import NavItem from "./NavItem";
 
 export default function Navigation() {
     return (
-        <div>
-            <div>
-                <Link href="/">Home</Link>
-            </div>
-            <div>
-                <Link href="/about">About</Link>
-            </div>
+        <div className="flex justify-evenly px-5 py-3">
+            <NavItem item="home" href="/" />
+            <NavItem item="about" href="/about" />
         </div>
     )
 }
